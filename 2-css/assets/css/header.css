@@ -1,0 +1,58 @@
+a {
+  text-decoration: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-color: #E9E9E9;
+}
+
+.main_title {
+  display: flex;
+  align-items: center;
+}
+
+.main_title a {
+  font-family: "Source Sans Pro", Bold;
+  font-size: 14px;
+  color: #3C3B3B;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.links {
+  margin-left: 30px;
+}
+
+.links_item a {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  color: #3C3B3B;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-right: 30px;
+  position: relative; 
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  color: #AAAAAA; 
+}
+
+.main {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
