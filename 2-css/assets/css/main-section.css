@@ -161,6 +161,10 @@
     margin-top: 40px; 
     align-self: flex-end;
   }
+
+  .post .header::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -177,9 +181,12 @@
   .actions {
     text-align: center;
   }
+
+  .post .header::after {
+    display: none;
+  }
+
 }
-
-
 
 
 
