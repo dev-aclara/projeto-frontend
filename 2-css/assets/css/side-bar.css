@@ -1,0 +1,55 @@
+body, .container {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar {
+  flex: 1;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #3C3B3B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-post {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mini-posts, .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mini-post {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mini-post .image {
+  text-align: center;
+  order: 1; 
+}
+
+.mini-post .header {
+  text-align: center;
+  order: 2; 
+}
+
+.mini-post .author {
+  text-align: center;
+  order: 3;
+}
+
+.mini-post .header {
+  background-color: rebeccapurple;
+}

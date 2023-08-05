@@ -1,10 +1,9 @@
 #main {
+  flex: 2; 
+  padding: 10px; 
   display: flex;
-  justify-content: center;
-  align-items: right;
   flex-direction: column;
-  text-align: center;
-  margin-top: 40px;
+  align-items: center;
 }
 
 .post .header {
@@ -187,6 +186,5 @@
   }
 
 }
-
 
 
