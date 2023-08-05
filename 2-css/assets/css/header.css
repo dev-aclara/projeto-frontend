@@ -21,6 +21,7 @@ a {
   color: #3C3B3B;
   text-transform: uppercase;
   margin-right: 10px;
+  font-weight: 800;
 }
 
 .links {
@@ -54,5 +55,9 @@ a {
 
   .menu {
     display: flex;
+  }
+
+  .main_title a {
+    font-weight: 700;
   }
 }

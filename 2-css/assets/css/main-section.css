@@ -23,6 +23,26 @@
   color: #3C3B3B;
 }
 
+.post .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+  position: relative;
+}
+
+.post .header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3C3B3B;
+  opacity: 0.1;
+  margin-top: 10px;
+}
+
 .meta {
   display: flex;
   flex-direction: column;
