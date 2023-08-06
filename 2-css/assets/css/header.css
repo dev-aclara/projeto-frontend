@@ -26,6 +26,22 @@ a {
 
 .links {
   margin-left: 30px;
+  display: flex;
+}
+
+.links_item {
+  position: relative;
+}
+
+.links_item::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: #E9E9E9;
 }
 
 .links_item a {
@@ -35,13 +51,25 @@ a {
   opacity: 0.5;
   text-transform: uppercase;
   margin-right: 30px;
-  position: relative; 
+  padding-left: 15px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  color: #AAAAAA; 
+  color: #AAAAAA;
+  position: relative;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: #E9E9E9;
 }
 
 .main {
