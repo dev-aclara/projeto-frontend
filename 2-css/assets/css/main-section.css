@@ -6,13 +6,6 @@
   align-items: center;
 }
 
-.post .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .secondary_title a {
   font-size: 28px;
   font-family: "Source Sans Pro", Arial, sans-serif; 
@@ -26,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px; 
+  margin-top: 10px; 
   position: relative;
 }
 
@@ -116,6 +109,7 @@
 }
 
 .image.featured img {
+  margin-top: 10px;
   max-width: 100%; 
   height: auto;
   margin: 0; 
@@ -143,33 +137,20 @@
 .actions .button.large:hover {
   background-color: #3C3B3B;
   color: #fff;
+  margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .post .header {
-    flex-direction: column;
-  }
-  
-  .title {
-    text-align: center;
-  }
-  
-  .meta {
-    text-align: right;
-    margin-left: 50px;
-    margin-top: 40px; 
-    align-self: flex-end;
-  }
-
-  .post .header::after {
-    display: none;
-  }
+.actions.pagination a.disabled.button.large {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
+
 
 @media screen and (max-width: 767px) {
   .post .header {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
   }
   
   .paragraph {
@@ -184,7 +165,33 @@
   .post .header::after {
     display: none;
   }
-
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .post .header {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .meta {
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 10px; 
+    align-self: flex-end;
+  }
 
+  .post .header::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .secondary_title a {
+    text-align: center;
+    display: block;
+  }
+}

@@ -1,20 +1,16 @@
-body, .container {
-  margin: 0;
-  padding: 0;
-}
-
 #sidebar {
   flex: 1;
   padding: 10px;
   margin-left: 20px;
-  background-color: #3C3B3B;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .mini-post {
-  background-color: white;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -41,7 +37,12 @@ body, .container {
 }
 
 .mini-post .header {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px;
+  overflow: auto;
   order: 2; 
 }
 
@@ -50,6 +51,143 @@ body, .container {
   order: 3;
 }
 
-.mini-post .header {
-  background-color: rebeccapurple;
+.tertiary_title a {
+  font-size: 14px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  line-height: 1.5;
+  color: #3C3B3B;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px; 
 }
+
+.text-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.text-post .published {
+  opacity: 0.5;
+  font-size: 12px; 
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.posts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.posts .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-container .header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.list-container .image {
+  order: -1;
+  margin-right: 10px;
+}
+
+.list-container .tertiary_title a {
+  font-size: 14px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #3C3B3B;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.list-container .published {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.blurb {
+  max-width: 500px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left; 
+}
+
+.secondary_title {
+  font-size: 16px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #3C3B3B;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.blurb .paragraph {
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #3C3B3B;
+  line-height: 1.5;
+  opacity: 0.8; 
+}
+
+.blurb .actions {
+  margin-top: 30px;
+}
+
+.blurb .button {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: transparent; 
+  color: #3C3B3B; 
+  text-decoration: none;
+  border: 0.5px solid #3C3B3B; 
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #3C3B3B;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #sidebar {
+    flex-direction: column 
+  
+  }
+
+  .mini-posts, .posts {
+    width: 100%; 
+  }
+}
+
+
+

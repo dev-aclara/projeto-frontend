@@ -23,5 +23,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 #container {
   display: flex;
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
+  
 }
+
+@media screen and (max-width: 768px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
